@@ -1,1 +1,3 @@
-# quizzer
+# quizz
+
+Quiz App by JavaScript

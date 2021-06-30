@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MySignup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    
+    <style>
+        *{box-sizing: border-box;}
+        body{margin: 0;background-image: url(wave.jpg);background-repeat: no-repeat;font-family: Arial;}
+        .main{position: absolute;width: 380px;padding: 30px;top: 20%;left: 60%;
+        background-color: white;background-image: linear-gradient( #0ddd79,white);border-radius: 20px;
+        box-shadow: 18px 18px 35px #41e1b9;}
+        .tbl{width: 100%;border-radius: 10px;}
+        .txt{width: 100%;padding: 15px;background-color: whitesmoke;border-radius: 10px;
+        text-decoration: none;border: none;}
+        .quizzer{align-content: center;padding-left: 35%;margin-top: 0%;}
+        .btn{width: 100%;padding: 15px 15px 15px; background-color: #0ddd79;color: black;
+        text-decoration: none;border: none;border-radius: 10px;cursor: pointer;border-spacing: 15px;}
+        .btn:hover{text-decoration: underline;background-color: #0d9e58;}
+    </style>
+</head>
+<body>
+   <div class="phone"><img src="bg.svg" width="800px" height="800px"></div>
+   <div class="main">
+       <form action="login.html">
+           <table class="tbl">
+               <tr>
+                   <td class="quizzer"><img src="avatar.svg" width="80px" height="80px">
+                   <h2 class="h"><b>QUIZZER</b></h2>
+                </td>
+               </tr>
+               <tr><td>&nbsp;</td></tr>
+               <tr><td>&nbsp;</td></tr>
+               <tr><td>&nbsp;</td></tr>
+               <tr>
+                <td>
+                    <input type="text" placeholder="Enter first name" class="txt" id="name"
+                    name="uname" required>
+                </td>
+            </tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr>
+                <td>
+                    <input type="text" placeholder="Enter last name" class="txt" id="name"
+                    name="uname" required>
+                </td>
+            </tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr>
+                <td>
+                    <input type="text" placeholder="Enter username" class="txt" id="name"
+                    name="uname" required>
+                </td>
+            </tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr>
+                <td>
+                    <input type="password" placeholder="Enter password" class="txt" id="pwd"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                </td>
+            </tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr>
+                <td>
+                    <b><input type="submit" value="Sign Up" class="btn"></b></td>
+            </tr>
+            <tr><td>&nbsp;</td></tr>
+           </table>
+       </form>
+   </div>
+</body>
+</html>
